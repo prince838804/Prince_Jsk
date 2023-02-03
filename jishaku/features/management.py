@@ -76,7 +76,7 @@ class ManagementFeature(Feature):
         for page in paginator.pages:
             await ctx.send(page)
 
-    @Feature.Command(name="unload", aliases=["Unload"])
+    @Feature.Command(name="unload")
     async def jsk_unload(self, ctx: ContextA, *extensions: ExtensionConverter):  # type: ignore
         """
         Unloads the given extension names.
