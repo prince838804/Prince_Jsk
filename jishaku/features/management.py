@@ -34,7 +34,7 @@ class ManagementFeature(Feature):
     Feature containing the extension and bot control commands
     """
 
-    @Feature.Command(parent="jsk", name="load", aliases=["reload"])
+    @Feature.Command(name="load", aliases=["reload"])
     async def jsk_load(self, ctx: ContextA, *extensions: ExtensionConverter):  # type: ignore
         """
         Loads or reloads the given extension names.
@@ -52,7 +52,7 @@ class ManagementFeature(Feature):
 
         for extension in itertools.chain(*extensions):
             method, icon = (
-                (self.bot.reload_extension, "\N{CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS}")
+                (self.bot.reload_extension, "\N<:LundLoad:1071113731657973920>")
                 if extension in self.bot.extensions else
                 (self.bot.load_extension, "\N{INBOX TRAY}")
             )
