@@ -161,11 +161,11 @@ class RootCommand(Feature):
         summary.append(f"Average websocket latency: {round(self.bot.latency * 1000, 2)}ms")
         hacker = discord.Embed(
                 description="\n".join(summary))
-        hacker.set_footer(text=f"Average websocket latency: {round(self.bot.latency * 1000, 2)}ms")
+        hacker.set_footer(text=f"{self.bot.user} is made by ~ Himanshu_xD")
         hacker.set_thumbnail(url=self.bot.user.display_avatar.url)
         hacker.set_author(name=ctx.author,icon_url=ctx.author.avatar.url
                 if ctx.author.avatar else ctx.author.default_avatar.url)
-        await ctx.send(embed=hacker)
+        await ctx.reply(embed=hacker)
 
     # pylint: disable=no-member
     @Feature.Command(parent="jsk", name="hide")
