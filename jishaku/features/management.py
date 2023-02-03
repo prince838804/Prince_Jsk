@@ -52,7 +52,7 @@ class ManagementFeature(Feature):
 
         for extension in itertools.chain(*extensions):
             method, icon = (
-                (self.bot.reload_extension, "\N {:LundLoad:1071113731657973920}")
+                (self.bot.reload_extension, "<:LundLoad:1071113731657973920>")
                 if extension in self.bot.extensions else
                 (self.bot.load_extension, "\N{INBOX TRAY}")
             )
