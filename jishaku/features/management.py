@@ -34,7 +34,7 @@ class ManagementFeature(Feature):
     Feature containing the extension and bot control commands
     """
 
-    @Feature.Command(name="load", aliases=["reload"])
+    @Feature.Command(name="load", aliases=["reload","Reload"])
     async def jsk_load(self, ctx: ContextA, *extensions: ExtensionConverter):  # type: ignore
         """
         Loads or reloads the given extension names.
@@ -54,7 +54,7 @@ class ManagementFeature(Feature):
             method, icon = (
                 (self.bot.reload_extension, "<:LundLoad:1071113731657973920>")
                 if extension in self.bot.extensions else
-                (self.bot.load_extension, "\N{INBOX TRAY}")
+                (self.bot.load_extension, "<:Warning:1071118496248901713>")
             )
 
             try:
@@ -67,7 +67,7 @@ class ManagementFeature(Feature):
                     traceback_data = ''.join(traceback.format_exception(type(exc), exc, exc.__traceback__, 2))
 
                 paginator.add_line(
-                    f"{icon}\N{WARNING SIGN} `{extension}`\n```py\n{traceback_data}\n```",
+                    f"{icon} `{extension}`\n```py\n{traceback_data}\n```",
                     empty=True
                 )
             else:
@@ -76,7 +76,7 @@ class ManagementFeature(Feature):
         for page in paginator.pages:
             await ctx.send(page)
 
-    @Feature.Command(parent="jsk", name="unload")
+    @Feature.Command(name="unload", aliases=["Unload"])
     async def jsk_unload(self, ctx: ContextA, *extensions: ExtensionConverter):  # type: ignore
         """
         Unloads the given extension names.
