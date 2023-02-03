@@ -34,7 +34,7 @@ class ManagementFeature(Feature):
     Feature containing the extension and bot control commands
     """
 
-    @Feature.Command(name="load", aliases=["reload","Reload"])
+    @Feature.Command(name="load", aliases=["reload"])
     async def jsk_load(self, ctx: ContextA, *extensions: ExtensionConverter):  # type: ignore
         """
         Loads or reloads the given extension names.
