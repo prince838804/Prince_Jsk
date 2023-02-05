@@ -111,7 +111,7 @@ class ShellFeature(Feature):
 
         return await ctx.invoke(self.jsk_shell, argument=Codeblock(argument.language, "git " + argument.content))  # type: ignore
 
-    @Feature.Command(parent="jsk", name="pip")
+    @Feature.Command(name="pip")
     async def jsk_pip(self, ctx: commands.Context, *, argument: codeblock_converter):  # type: ignore
         """
         Shortcut for 'jsk sh pip'. Invokes the system shell.
