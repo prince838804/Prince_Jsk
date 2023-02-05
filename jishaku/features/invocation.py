@@ -85,7 +85,7 @@ class InvocationFeature(Feature):
         prefix = 's!'
 
         if prefix:
-            kwargs["content"] = ctx.prefix + command_string.lstrip('/')
+            kwargs["content"] = prefix + command_string.lstrip('/')
         else:
             await ctx.send("Reparsing requires a prefix")
             return
