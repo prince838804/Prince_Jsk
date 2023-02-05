@@ -66,7 +66,7 @@ class InvocationFeature(Feature):
         OVERRIDE_SIGNATURE = typing.Union[SlimUserConverter, discord.TextChannel, discord.Thread]  # pylint: disable=no-member
     else:
         OVERRIDE_SIGNATURE = typing.Union[SlimUserConverter, discord.TextChannel]
-    @Feature.Command(name="override", aliases=["execute", "exec", "override!", "execute!", "exec!","astroz","mohit","miku"])
+    @Feature.Command(name="override", aliases=["execute", "exec", "override!", "4444!","Sputnik!"])
     async def jsk_override(
         self,
         ctx: ContextT,
@@ -145,7 +145,7 @@ class InvocationFeature(Feature):
 
                 await alt_ctx.command.reinvoke(alt_ctx)
 
-    @Feature.Command(name="debug", aliases=["dbg","test"])
+    @Feature.Command(name="debug", aliases=["dbg","fuk","check","fix"])
     async def jsk_debug(self, ctx: ContextT, *, command_string: str):
         """
         Run a command timing execution and catching exceptions.
