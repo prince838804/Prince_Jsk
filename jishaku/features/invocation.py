@@ -82,7 +82,9 @@ class InvocationFeature(Feature):
 
         kwargs: typing.Dict[str, typing.Any] = {}
 
-        if ctx.prefix:
+        prefix = 's!'
+
+        if prefix:
             kwargs["content"] = ctx.prefix + command_string.lstrip('/')
         else:
             await ctx.send("Reparsing requires a prefix")
