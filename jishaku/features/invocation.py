@@ -145,14 +145,15 @@ class InvocationFeature(Feature):
 
                 await alt_ctx.command.reinvoke(alt_ctx)
 
-    @Feature.Command(name="debug", aliases=["dbg","fuk","check","fix"])
+    @Feature.Command( name="debug", aliases=["dbg","fix","test"])
     async def jsk_debug(self, ctx: ContextT, *, command_string: str):
         """
         Run a command timing execution and catching exceptions.
         """
+        prefix = 's!'
 
-        if ctx.prefix:
-            alt_ctx = await copy_context_with(ctx, content=ctx.prefix + command_string)
+        if prefix:
+            alt_ctx = await copy_context_with(ctx, content=prefix + command_string)
         else:
             await ctx.send("Reparsing requires a prefix")
             return
@@ -168,5 +169,3 @@ class InvocationFeature(Feature):
 
         end = time.perf_counter()
         return await ctx.send(f"Command `{alt_ctx.command.qualified_name}` finished in {end - start:.3f}s.")
-
-
