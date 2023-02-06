@@ -42,6 +42,8 @@ class FilesystemFeature(Feature):
 
         This command is similar to jsk cat, but accepts a URL.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         # remove embed maskers if present
         url = url.lstrip("<").rstrip(">")
