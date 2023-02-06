@@ -198,6 +198,8 @@ class RootCommand(Feature):
         """
         Shows the currently running jishaku tasks.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         if not self.tasks:
             return await ctx.send("No currently running tasks.")
