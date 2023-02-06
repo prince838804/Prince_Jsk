@@ -67,6 +67,8 @@ class PythonFeature(Feature):
 
         Provide no argument for current status.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         if toggle is None:
             if self.retain:
@@ -176,6 +178,8 @@ class PythonFeature(Feature):
         """
         Direct evaluation of Python code.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         if typing.TYPE_CHECKING:
             argument: Codeblock = argument  # type: ignore
@@ -206,6 +210,8 @@ class PythonFeature(Feature):
         """
         Evaluation of Python code with inspect information.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         if typing.TYPE_CHECKING:
             argument: Codeblock = argument  # type: ignore
@@ -264,6 +270,8 @@ class PythonFeature(Feature):
             """
             Times and produces a relative timing report for a block of code.
             """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
             if typing.TYPE_CHECKING:
                 argument: Codeblock = argument  # type: ignore
@@ -379,6 +387,8 @@ class PythonFeature(Feature):
         """
         Disassemble Python code into bytecode.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         if typing.TYPE_CHECKING:
             argument: Codeblock = argument  # type: ignore
@@ -406,6 +416,8 @@ class PythonFeature(Feature):
         """
         Disassemble Python code into AST.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         if typing.TYPE_CHECKING:
             argument: Codeblock = argument  # type: ignore
