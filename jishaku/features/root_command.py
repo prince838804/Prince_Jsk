@@ -222,6 +222,8 @@ class RootCommand(Feature):
 
         If the index passed is -1, will cancel the last task instead.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         if not self.tasks:
             return await ctx.send("No tasks to cancel.")
