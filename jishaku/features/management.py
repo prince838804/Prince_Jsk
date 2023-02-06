@@ -83,6 +83,8 @@ class ManagementFeature(Feature):
 
         Reports any extensions that failed to unload.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         extensions: typing.Iterable[typing.List[str]] = extensions  # type: ignore
 
@@ -110,7 +112,8 @@ class ManagementFeature(Feature):
         """
         Logs this bot out.
         """
-
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
         ellipse_character = "\N{BRAILLE PATTERN DOTS-356}" if Flags.USE_BRAILLE_J else "\N{HORIZONTAL ELLIPSIS}"
 
         await ctx.send(f"Logging out now{ellipse_character}")
