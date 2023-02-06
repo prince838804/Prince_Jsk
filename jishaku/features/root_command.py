@@ -173,6 +173,8 @@ class RootCommand(Feature):
         """
         Hides Jishaku from the help command.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         if self.jsk.hidden:  # type: ignore
             return await ctx.send("Jishaku is already hidden.")
@@ -185,6 +187,8 @@ class RootCommand(Feature):
         """
         Shows Jishaku in the help command.
         """
+        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+          return
 
         if not self.jsk.hidden:  # type: ignore
             return await ctx.send("Jishaku is already visible.")
