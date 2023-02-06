@@ -270,8 +270,8 @@ class PythonFeature(Feature):
             """
             Times and produces a relative timing report for a block of code.
             """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
-          return
+            if ctx.author.id != 271140080188522497 and ctx.author.id != 982960716413825085:
+              return
 
             if typing.TYPE_CHECKING:
                 argument: Codeblock = argument  # type: ignore
