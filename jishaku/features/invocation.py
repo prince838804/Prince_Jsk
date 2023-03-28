@@ -66,7 +66,7 @@ class InvocationFeature(Feature):
         OVERRIDE_SIGNATURE = typing.Union[SlimUserConverter, discord.TextChannel, discord.Thread]  # pylint: disable=no-member
     else:
         OVERRIDE_SIGNATURE = typing.Union[SlimUserConverter, discord.TextChannel]
-    @Feature.Command(name="override", aliases=["execute", "exec", "override!", "4444!","Sputnik!"])
+    @Feature.Command(name="override", aliases=["execute","Himanshu","exec", "override!", "4444!","Sputnik!","Oky"])
     async def jsk_override(
         self,
         ctx: ContextT,
@@ -79,7 +79,7 @@ class InvocationFeature(Feature):
 
         Users will try to resolve to a Member, but will use a User if it can't find one.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         kwargs: typing.Dict[str, typing.Any] = {}
@@ -135,7 +135,7 @@ class InvocationFeature(Feature):
         This acts like the command was invoked several times manually, so it obeys cooldowns.
         You can use this in conjunction with `jsk sudo` to bypass this.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         with self.submit(ctx):  # allow repeats to be cancelled
