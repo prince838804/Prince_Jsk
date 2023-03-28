@@ -67,7 +67,7 @@ class PythonFeature(Feature):
 
         Provide no argument for current status.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if toggle is None:
@@ -178,7 +178,7 @@ class PythonFeature(Feature):
         """
         Direct evaluation of Python code.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if typing.TYPE_CHECKING:
@@ -210,7 +210,7 @@ class PythonFeature(Feature):
         """
         Evaluation of Python code with inspect information.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if typing.TYPE_CHECKING:
@@ -270,7 +270,7 @@ class PythonFeature(Feature):
             """
             Times and produces a relative timing report for a block of code.
             """
-            if ctx.author.id != 271140080188522497 and ctx.author.id != 982960716413825085:
+            if ctx.author.id != 217354675454738433 and ctx.author.id != 982960716413825085:
               return
 
             if typing.TYPE_CHECKING:
@@ -387,7 +387,7 @@ class PythonFeature(Feature):
         """
         Disassemble Python code into bytecode.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if typing.TYPE_CHECKING:
@@ -416,7 +416,7 @@ class PythonFeature(Feature):
         """
         Disassemble Python code into AST.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if typing.TYPE_CHECKING:
