@@ -173,7 +173,7 @@ class RootCommand(Feature):
         """
         Hides Jishaku from the help command.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if self.jsk.hidden:  # type: ignore
@@ -187,7 +187,7 @@ class RootCommand(Feature):
         """
         Shows Jishaku in the help command.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if not self.jsk.hidden:  # type: ignore
@@ -202,7 +202,7 @@ class RootCommand(Feature):
         """
         Shows the currently running jishaku tasks.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if not self.tasks:
@@ -228,7 +228,7 @@ class RootCommand(Feature):
 
         If the index passed is -1, will cancel the last task instead.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if not self.tasks:
