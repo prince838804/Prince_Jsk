@@ -78,7 +78,7 @@ class ShellFeature(Feature):
         This uses the system shell as defined in $SHELL, or `/bin/bash` otherwise.
         Execution can be cancelled by closing the paginator.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if typing.TYPE_CHECKING:
@@ -107,7 +107,7 @@ class ShellFeature(Feature):
         """
         Shortcut for 'jsk sh git'. Invokes the system shell.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if typing.TYPE_CHECKING:
@@ -120,7 +120,7 @@ class ShellFeature(Feature):
         """
         Shortcut for 'jsk sh pip'. Invokes the system shell.
         """
-        if ctx.author.id != 1049313229127557180 and ctx.author.id != 1051005227135934505:
+        if ctx.author.id != 217354675454738433 and ctx.author.id != 1051005227135934505:
           return
 
         if typing.TYPE_CHECKING:
@@ -147,7 +147,7 @@ class ShellFeature(Feature):
             """
             Shortcut for scaffolding and executing 'npm run'. Only exists if the executables are detected.
             """
-            if ctx.author.id != 271140080188522497 and ctx.author.id != 982960716413825085:
+            if ctx.author.id != 217354675454738433 and ctx.author.id != 982960716413825085:
               return
 
             if typing.TYPE_CHECKING:
@@ -164,7 +164,7 @@ class ShellFeature(Feature):
             """
             Shortcut for scaffolding and executing 'pyright main.py'. Only exists if the executables are detected.
             """
-            if ctx.author.id != 271140080188522497 and ctx.author.id != 982960716413825085:
+            if ctx.author.id != 217354675454738433 and ctx.author.id != 982960716413825085:
               return
 
             if typing.TYPE_CHECKING:
@@ -179,7 +179,7 @@ class ShellFeature(Feature):
             """
             Shortcut for scaffolding and executing 'cargo run'. Only exists if the executables are detected.
             """
-            if ctx.author.id != 271140080188522497 and ctx.author.id != 982960716413825085:
+            if ctx.author.id != 217354675454738433 and ctx.author.id != 982960716413825085:
               return
 
             if typing.TYPE_CHECKING:
